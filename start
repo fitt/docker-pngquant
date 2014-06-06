@@ -1,0 +1,6 @@
+#!/bin/sh
+
+docker kill pngquant
+docker rm pngquant
+
+docker run -d -p 1337:80 --name pngquant keeth/pngquant
