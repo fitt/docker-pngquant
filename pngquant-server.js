@@ -30,7 +30,6 @@ http.createServer(function (req, res) {
             console.error(withDate(e.stack));
             res.end();
           });
-      console.info(withDate("pngquant success"));
     } catch (e) {
       console.error(withDate("Request handler error: " + e.stack));
       res.end();
